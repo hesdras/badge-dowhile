@@ -1,0 +1,103 @@
+/*========== RESET ==========*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*========== BASE ==========*/
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font: 400 1rem 'Roboto', sans-serif;
+    display: grid;
+    place-items: center;
+    background-color: var(--black2);
+    color: var(--font-color-light);
+    --webkit-font-smoothing: antialiased;
+}
+
+/*========== VARIABLES ==========*/
+:root {
+    --black1: hsl(240, 5%, 4%);
+    --black2: hsl(240, 5%, 7%);
+    --black3: hsl(240, 6%, 13%);
+    --black4: hsl(240, 6%, 17%);
+    --gray1: hsl(240, 6%, 58%);
+    --gray2: hsl(240, 7%, 78%);
+    --gray3: hsl(240, 9%, 89%);
+    --white: hsl(0, 0%, 100%);
+    --font-color-light: hsl(240, 9%, 89%);
+    --font-color-dark: hsl(240, 6%, 17%);
+}
+
+/*========== LAYOUT ==========*/
+main {
+    background: url(/assets/images/background-mobile.svg) no-repeat center/cover;
+    width: 100vw;
+    height: 100vh;
+    min-height: 812px;
+}
+
+.container {
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+}
+
+/*========== AVATAR ==========*/
+#userAvatar {
+    width: 10rem;
+    margin: 11.5rem auto 0;
+    position: relative;
+}
+
+#userAvatar span {
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+}
+
+#userAvatar > img {
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+/*========== BIO ==========*/
+h1 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color-light);
+}
+
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github img {
+    margin-right: 0.5rem;
+}
+
+p {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+/*========== SOCIAL ==========*/
+#socialMediaLinks {
+    margin-top: 4rem;
+}
